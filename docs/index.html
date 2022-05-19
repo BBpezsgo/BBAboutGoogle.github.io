@@ -6,80 +6,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scrolldownarrow.css">
+    <link rel="stylesheet" href="scrollbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://cdn0.iconfinder.com/data/icons/social-network-9/50/2-512.png">
-    <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-        }
-
-        .bgimg {
-            position: relative;
-            opacity: 0.65;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 400px;
-            width: 100%;
-
-        }
-
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-
-            .bgimg {
-                background-attachment: scroll;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="https://www.google.com/" style="width: 100px;">
-            <svg alt="Google" class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
-                <path fill="#4285F4"
-                    d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z">
-                </path>
-                <path fill="#EA4335"
-                    d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z">
-                </path>
-                <path fill="#4285F4"
-                    d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z">
-                </path>
-                <path fill="#FBBC05"
-                    d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z">
-                </path>
-                <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
-                <path fill="#EA4335"
-                    d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z">
-                </path>
-            </svg>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
     <!-- Mi a google? -->
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h2>Mi a Google?</h2>
+    <div class="bgimg" style="
+        background-image: url(https://4kwallpapers.com/images/walls/thumbs_2t/5352.jpg); height: 100%;">
+        <a id="scrolldownthink" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules"
+            data-ca3_icon=""></a>
+    </div>
+    <div class="panel-light">
+        <h2>Mi a
+            <a class="navbar-brand" href="https://www.google.com/" style="
+                width: 110px;
+                transform: translateY(-2px);
+                margin-right: -4px;
+            ">
+                <svg alt="Google" class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 24">
+                    <path fill="#4285F4"
+                        d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z">
+                    </path>
+                    <path fill="#EA4335"
+                        d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z">
+                    </path>
+                    <path fill="#4285F4"
+                        d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z">
+                    </path>
+                    <path fill="#FBBC05"
+                        d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z">
+                    </path>
+                    <path fill="#34A853" d="M58 .24h2.51v17.57H58z"></path>
+                    <path fill="#EA4335"
+                        d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z">
+                    </path>
+                </svg>
+            </a>
+            ?
+        </h2>
         <p>A Google LLC amerikai, tőzsdén bejegyzett részvénytársaság, amit eredetileg zártkörűen
             működő társaságként alapítottak 1998-ban, és aminek a nevéhez fűződik a Google keresőmotor
             kifejlesztése és üzemeltetése.
@@ -92,10 +62,9 @@
         style="background-image: url(https://i.insider.com/5c992009d2ce7817ef037b4b?width=1200&format=jpeg);">
     </div>
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-
+        <div class="panel-dark reveal">
             <h2><img style="height: 35px; margin-right: 5px;"
-                src="https://img.icons8.com/color/344/search--v1.png">Keresőmotor</h2>
+                    src="https://img.icons8.com/color/344/search--v1.png">Keresőmotor</h2>
             <p>A Google internetes keresőrendszer, amely egyúttal (kapcsolt alkalmazásait is beleértve) térképként,
                 pénzváltóként, számológépként, naptárként, helyesírás-ellenőrzőként és szótárként is használható.
             </p>
@@ -110,14 +79,14 @@
         style="background-image: url(https://www.google.com/chrome/static/images/homepage/homepage_tools.png);">
     </div>
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="panel-light reveal">
             <h2><img style="height: 35px; margin-right: 5px;"
                     src="https://fonts.gstatic.com/s/i/productlogos/chrome/v7/web-64dp/logo_chrome_color_1x_web_64dp.png"><a
-                    href="https://www.google.com/chrome" target="blank">Chrome</a>,
+                    href="https://www.google.com/chrome" target="_blank">Chrome</a>,
                 a Google webböngészője</h2>
             <p>A Google-alkalmazásokkal (pl. <a href="https://www.google.com/intl/hu/gmail/about/"
-                    target="blank">Gmail</a>, <a href="https://pay.google.com" target="blank">Google Pay</a> és <a
-                    href="https://support.google.com/" target="blank">Google Segéd</a>) a Chrome segíthet a
+                    target="_blank">Gmail</a>, <a href="https://pay.google.com" target="_blank">Google Pay</a> és <a
+                    href="https://support.google.com/" target="_blank">Google Segéd</a>) a Chrome segíthet a
                 hatékonyság
                 fenntartásában és a böngészőben rejlő lehetőségek minél jobb kiaknázásában.
             </p>
@@ -133,10 +102,10 @@
         style="background-image: url(https://www.cnet.com/a/img/resize/5e99cad33cf87423f9b077379a095e3179baf7c1/2012/06/19/edc7da3a-f0ea-11e2-8c7c-d4ae52e62bcc/Custom_Gmail_background.png?auto=webp&fit=crop&height=675&width=1200);">
     </div>
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="panel-dark reveal">
             <h2><img style="height: 35px; margin-right: 5px;"
                     src="https://lh3.googleusercontent.com/8v_oGMOj9bgohn50RgLhJ8XGZ2kIUdr0RG4zCkIYnfjK24ORS0WFaTWmnzxXzagUg2fwAmDy1W_Y4oTtIacT2dhQzAqOy5H9Vg23Rq1oVnhUGtOynjY">
-                <a href="https://www.google.com/intl/hu/gmail/about/" target="blank">Gmail</a>
+                <a href="https://www.google.com/intl/hu/gmail/about/" target="_blank">Gmail</a>
             </h2>
             <ul>
                 <li>
@@ -166,14 +135,13 @@
 
 
     <!-- Garfield-mail -->
-    <div class="bgimg"
-        style="
+    <div class="bgimg" style="
         background-image: url(https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/vuxpkqankh5e16tajm5g.png);
         background-size: contain;
         ">
     </div>
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="panel-light reveal">
             <h4>Érdekesség: Garfield Mail-ből Gmail</h4>
             <p>
                 Amikor a Google nevű vadonatúj cég elsőként kapta meg az angyali befektetést Jeff Bezostól és
@@ -189,19 +157,64 @@
                 Paws Inc-hez, a Garfield alkotója, Jim Davis rajzfilmstúdiójához.
             </p>
             <a class="btn btn-primary" href="https://gizmodo.com/the-original-gmail-was-garfield-mail-1822970617"
-                target="blank">További információ</a>
+                target="_blank">További információ</a>
+        </div>
+    </div>
+
+
+    <!-- Earth -->
+    <div class="bgimg" style="
+        background-image: url(https://www.google.hu/intl/en_us/earth/assets/static/images/overview/overview__get-started__desktop-image.jpg);
+        ">
+    </div>
+    <div style="position:relative;">
+        <div class="panel-dark reveal">
+            <h2><img style="height: 35px; margin-right: 5px;" src="https://www.gstatic.com/earth/00-favicon.ico"><a
+                    href="https://www.google.hu/intl/hu/earth/" target="_blank">Google Earth</a></h2>
+            <p>
+                A világ legrészletesebb földgömbje
+            </p>
+            <p>Tartalomkészítés az Earth szolgáltatásban:</p>
+            <ul>
+                <li>
+                    <h3>Rajzolás a térképre</h3>
+                    <p>
+                        Hozzáadhat helyjelzőket a fontos helyek projektben való megjelöléséhez, vagy vonalakat és
+                        alakzatokat rajzolhat közvetlenül a térképre.
+                    </p>
+                </li>
+                <li>
+                    <h3>Fotók és videók hozzáadása</h3>
+                    <p>
+                        Térképén képeket és videókat megjelenítve részletes kontextuális információkat kínálhat.
+                    </p>
+                </li>
+                <li>
+                    <h3>A nézet személyre szabása</h3>
+                    <p>
+                        A Google Earth részletes földgömbjéről indulva megdöntheti a térképet a tökéletes 3D-s nézet
+                        mentéséhez, vagy éppen elmerülhet a 360 fokos élményben az Utcakép segítségével.
+                    </p>
+                </li>
+                <li>
+                    <h3>Történet megosztása a nagyvilággal</h3>
+                    <p>
+                        Együttműködhet másokkal, mint a Google Dokumentumokban, valamint megoszthatja történetét
+                        prezentációként.
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
 
 
     <!-- Other -->
-    <div class="bgimg"
-        style="
+    <div class="bgimg" style="
         background-image: url(https://www.matrics360.com/wp-content/uploads/2021/01/Google-Products.png);
         ">
     </div>
     <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="panel-light reveal">
             <h2>Egyéb termékek a Google-től</h2>
             <p>
                 A Google számos terméket kínál ezeken kívül, például:
@@ -211,7 +224,7 @@
                     <h3>
                         <img style="height: 30px; margin-right: 5px;"
                             src="https://lh3.googleusercontent.com/EUHFjMpMj-UPEu6jfEEP8TPV7QxQerc-n_qulHi3MFPnK_63i5ldHApJsutq7wXqNmN9V2rmk9swsQ9I0eddAv77HIO4uv6gKt8haNAMqjiM9pqNu9w">
-                        <a href="https://edu.google.com/products/classroom/" target="blank">Google Tanterem</a>
+                        <a href="https://edu.google.com/products/classroom/" target="_blank">Google Tanterem</a>
                     </h3>
                     <p>
                         Segítséget kaphat a tanulási tapasztalatok kezeléséhez, méréséhez és gazdagításához –
@@ -222,7 +235,7 @@
                     <h3>
                         <img style="height: 30px; margin-right: 5px;"
                             src="https://lh3.googleusercontent.com/eo3ClMn3vDAEk1RMcoPog7KJxn0SCHGRtAf_AqB8ckGP9Wn61IQ9qLaOUPIH7nJplbtb0v1jErypLa0WwK9STbPb3eb7HpBYu7XHOddAeCJ5KohyXg">
-                        <a href="https://edu.google.com/products/meet/" target="blank">Google Meet</a>
+                        <a href="https://edu.google.com/products/meet/" target="_blank">Google Meet</a>
                     </h3>
                     <p>
                         Erősíti az iskolai közösségeket, lehetővé téve a tanárok számára, hogy órákat,
@@ -230,10 +243,8 @@
                     </p>
                 </li>
             </ul>
+        </div>
     </div>
-    </div>
-
-
 
 
     <!--
@@ -267,13 +278,13 @@
 
                 <h2><img style="height: 35px; margin-right: 5px;"
                         src="https://fonts.gstatic.com/s/i/productlogos/chrome/v7/web-64dp/logo_chrome_color_1x_web_64dp.png"><a
-                        href="https://www.google.com/chrome" target="blank">Chrome</a>,
+                        href="https://www.google.com/chrome" target="_blank">Chrome</a>,
                     a Google webböngészője</h2>
                 <img class="img-thumbnail"
                     src="https://www.google.com/chrome/static/images/homepage/homepage_tools.png">
                 <p>A Google-alkalmazásokkal (pl. <a href="https://www.google.com/intl/hu/gmail/about/"
-                        target="blank">Gmail</a>, <a href="https://pay.google.com" target="blank">Google Pay</a> és <a
-                        href="https://support.google.com/" target="blank">Google Segéd</a>) a Chrome segíthet a
+                        target="_blank">Gmail</a>, <a href="https://pay.google.com" target="_blank">Google Pay</a> és <a
+                        href="https://support.google.com/" target="_blank">Google Segéd</a>) a Chrome segíthet a
                     hatékonyság
                     fenntartásában és a böngészőben rejlő lehetőségek minél jobb kiaknázásában.
                 </p>
@@ -285,7 +296,7 @@
 
                 <h2><img style="height: 35px; margin-right: 5px;"
                         src="https://lh3.googleusercontent.com/8v_oGMOj9bgohn50RgLhJ8XGZ2kIUdr0RG4zCkIYnfjK24ORS0WFaTWmnzxXzagUg2fwAmDy1W_Y4oTtIacT2dhQzAqOy5H9Vg23Rq1oVnhUGtOynjY">
-                    <a href="https://www.google.com/intl/hu/gmail/about/" target="blank">Gmail</a>
+                    <a href="https://www.google.com/intl/hu/gmail/about/" target="_blank">Gmail</a>
                 </h2>
                 <img class="img-thumbnail"
                     src="https://lh3.googleusercontent.com/2RgzBkTEk75wwREhnn1u5S17lGsfQ5Ci2RgSZ1BooQ4ZdrRuE-XSRsOnnI5HXUNcKoVPBwO8z6BTjD3WV1Tn09eD8Q_UuUSHFlYPvA=w500-l90-sg-rj-c0xffffff">
@@ -332,7 +343,7 @@
                     Paws Inc-hez, a Garfield alkotója, Jim Davis rajzfilmstúdiójához.
                 </p>
                 <a class="btn btn-primary" href="https://gizmodo.com/the-original-gmail-was-garfield-mail-1822970617"
-                    target="blank">További információ</a>
+                    target="_blank">További információ</a>
 
 
 
@@ -345,7 +356,7 @@
                         <h3>
                             <img style="height: 30px; margin-right: 5px;"
                                 src="https://lh3.googleusercontent.com/EUHFjMpMj-UPEu6jfEEP8TPV7QxQerc-n_qulHi3MFPnK_63i5ldHApJsutq7wXqNmN9V2rmk9swsQ9I0eddAv77HIO4uv6gKt8haNAMqjiM9pqNu9w">
-                            <a href="https://edu.google.com/products/classroom/" target="blank">Google Tanterem</a>
+                            <a href="https://edu.google.com/products/classroom/" target="_blank">Google Tanterem</a>
                         </h3>
                         <p>
                             Segítséget kaphat a tanulási tapasztalatok kezeléséhez, méréséhez és gazdagításához –
@@ -356,7 +367,7 @@
                         <h3>
                             <img style="height: 30px; margin-right: 5px;"
                                 src="https://lh3.googleusercontent.com/eo3ClMn3vDAEk1RMcoPog7KJxn0SCHGRtAf_AqB8ckGP9Wn61IQ9qLaOUPIH7nJplbtb0v1jErypLa0WwK9STbPb3eb7HpBYu7XHOddAeCJ5KohyXg">
-                            <a href="https://edu.google.com/products/meet/" target="blank">Google Meet</a>
+                            <a href="https://edu.google.com/products/meet/" target="_blank">Google Meet</a>
                         </h3>
                         <p>
                             Erősíti az iskolai közösségeket, lehetővé téve a tanárok számára, hogy órákat,
@@ -373,6 +384,39 @@
     </div>
 
 -->
+
+
+    <!-- Fade in on scroll -->
+    <script>
+        window.addEventListener("scroll", reveal);
+
+        // To check the scroll position on page load
+        reveal();
+
+        function reveal() {
+            const scrolldownthink = document.getElementById('scrolldownthink')
+            if ((window.innerHeight - scrolldownthink.getBoundingClientRect().top) < 120) {
+                console.log(true)
+                scrolldownthink.classList.add("active");
+            } else {
+                console.log(false)
+                scrolldownthink.classList.remove("active");
+            }
+
+
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
